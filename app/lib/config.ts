@@ -8,5 +8,14 @@ export const siteConfig = {
     links: {
         github: 'https://github.com/lonewolfyx/shadcn-vue-hooks',
     },
-    navItems: [],
+    navItems: [
+        {
+            href: '/docs/getting-started/introduction',
+            label: 'Guid',
+        },
+        {
+            href: '/docs/composables/createcontext',
+            label: 'Composables',
+        },
+    ],
 }
