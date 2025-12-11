@@ -23,9 +23,9 @@
 
                 <MainNav
                     :items="siteConfig.navItems"
-                    class="hidden lg:flex"
+                    class="hidden md:flex md:flex-1 md:justify-center"
                 />
-                <div class="ml-auto flex items-center gap-2 md:flex-1 md:justify-end">
+                <div class="flex items-center gap-2 md:justify-end">
                     <GitHubLink />
                     <Separator
                         class="3xl:flex hidden"
