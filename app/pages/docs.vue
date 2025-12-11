@@ -19,6 +19,11 @@ import { useNavigation } from '~/composables/useNavigation'
 
 const route = useRoute()
 const pathname = computed(() => route.path)
+
+if (pathname.value === '/docs/') {
+    throw createError({ statusCode: 404, statusMessage: 'Page not found' })
+}
+
 const { data } = await useNavigation()
 const docData = computed(() => data.value!.find(i => i.stem === 'docs')!)
 </script>
